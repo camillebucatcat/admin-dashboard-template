@@ -15,8 +15,6 @@ import { NzConfig, NZ_CONFIG } from 'ng-zorro-antd/core/config';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
 registerLocaleData(en);
 
 const ngZorroConfig: NzConfig = {
@@ -28,8 +26,6 @@ const ngZorroConfig: NzConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    AboutComponent
   ],
   imports: [
     BrowserModule,

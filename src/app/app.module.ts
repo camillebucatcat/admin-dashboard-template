@@ -10,11 +10,7 @@ import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideHttpClient } from '@angular/common/http';
-import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzConfig, NZ_CONFIG } from 'ng-zorro-antd/core/config';
-import { NzLayoutModule } from 'ng-zorro-antd/layout';
-import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
-import { NzMenuModule } from 'ng-zorro-antd/menu';
 registerLocaleData(en);
 
 const ngZorroConfig: NzConfig = {
@@ -31,10 +27,6 @@ const ngZorroConfig: NzConfig = {
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NzLayoutModule,
-    NzButtonModule,
-    NzBreadCrumbModule,
-    NzMenuModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US },

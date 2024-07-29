@@ -11,8 +11,8 @@ const routes: Routes = [
     component: MainComponent,
 
     children: [
-      { path: 'dashboard', loadChildren: () => import('./pages/main/dashboard/dashboard.module').then(m => m.DashboardModule) },
-      { path: 'processing', loadChildren: () => import('./pages/main/processing/processing.module').then(m => m.ProcessingModule) }
+      { path: 'my-task/dashboard', loadChildren: () => import('./pages/main/dashboard/dashboard.module').then(m => m.DashboardModule) },
+      { path: 'my-task/processing', loadChildren: () => import('./pages/main/processing/processing.module').then(m => m.ProcessingModule) }
     ]
   },
 ];
